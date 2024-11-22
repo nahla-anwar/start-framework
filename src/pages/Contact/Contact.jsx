@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <>
-      <div className="min-h-screen pt-24">
+      <div className="min-h-screen pt-32">
         <div className="container flex items-center flex-col">
           <h2 className="text-4xl uppercase font-bold text-[rgb(44,62,80)] mb-5">
             conatct section

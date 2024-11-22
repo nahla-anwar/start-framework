@@ -6,7 +6,7 @@ import port3 from "../../assets/imgs/port3.png";
 export default function Portfolio() {
   return (
     <>
-      <div className="min-h-screen pt-24">
+      <div className="min-h-screen pt-32">
         <div className="container flex flex-col items-center gap-5">
           <h2 className="text-4xl uppercase font-bold text-[rgb(44,62,80)]">
             conatct section
