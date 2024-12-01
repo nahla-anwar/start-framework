@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { animateScroll as scroll } from "react-scroll";
 
 export default function Navbar() {
   const [scrolling, setScrolling] = useState(false);
@@ -9,7 +10,7 @@ export default function Navbar() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 20) {
+    if (window.scrollY > 10) {
       setScrolling(true);
     } else {
       setScrolling(false);
@@ -19,8 +20,8 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`bg-[rgb(44,62,80)] py-9 text-white fixed top-0 left-0 right-0 z-20 ${
-          scrolling ? "py-5" : ""
+        className={`bg-[rgb(44,62,80)]  text-white fixed top-0 left-0 right-0 z-20 ${
+          scrolling ? "py-5" : "py-9"
         }`}
       >
         <div className="container flex justify-between items-center">
