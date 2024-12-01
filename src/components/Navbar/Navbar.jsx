@@ -1,6 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { animateScroll as scroll } from "react-scroll";
 
 export default function Navbar() {
   const [scrolling, setScrolling] = useState(false);
